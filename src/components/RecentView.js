@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: constants.grey,
-    lineHeight:23
+    lineHeight:23,
+    letterSpacing: 0.02
   },
   viewAllButtonText: {
     fontSize: 16,

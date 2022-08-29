@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     fontSize: constants.ColorTitleFont,
     fontWeight: constants.ColorTitleWeight,
     color: '#2F2F2F',
+    letterSpacing: 0.02
   },
   color: {
     fontSize: constants.ColorNameFont,

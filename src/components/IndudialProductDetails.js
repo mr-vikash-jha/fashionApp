@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     fontSize: constants.IndividualProductTitleFontSize,
     fontWeight: constants.IndividualProductTitleFontWeight,
     color: constants.productTitleFontColor,
+    letterSpacing: 0.03
   },
   priceContainer: {
     display: 'flex',
