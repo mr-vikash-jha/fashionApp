@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import constants from '../constants';
 
 const ProductDiscreption = () => {
   return (
@@ -23,5 +24,7 @@ const styles = StyleSheet.create({
   textDisc: {
     fontSize: 15,
     lineHeight: 25,
+    color: constants.bredcrumColor,
+    fontWeight:'390'
   },
 });

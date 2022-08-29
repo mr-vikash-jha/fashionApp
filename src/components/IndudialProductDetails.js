@@ -84,6 +84,8 @@ const styles = StyleSheet.create({
     marginLeft: 3,
     fontSize: 18,
     color: '#2F2F2F',
+    fontSize:17,
+    fontWeight:'390'
   },
   model: {
     marginTop: 18,
@@ -92,6 +94,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '400',
     color: '#000',
+    fontSize: 17,
   },
   modelDiscView: {
     display: 'flex',

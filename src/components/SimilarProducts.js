@@ -43,10 +43,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: constants.grey,
+    lineHeight:26
   },
   viewAllButtonText: {
     fontSize: 16,
     fontWeight: '400',
     color: constants.primaryColor,
+    lineHeight:26
   },
 });

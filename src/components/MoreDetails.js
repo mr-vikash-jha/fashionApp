@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     color: '#2F2F2F',
+    lineHeight:23
   },
   returnAndExchange: {
     flex: 1,
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     color: '#2F2F2F',
+    lineHeight:23
   },
   plusIcon: {
     marginRight: 30,

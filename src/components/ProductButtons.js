@@ -51,6 +51,9 @@ const styles = StyleSheet.create({
   buyTitle: {
     fontSize: 16,
     color: constants.primaryColor,
+    fontWeight:'400',
+    lineHeight:23,
+    fontFamily: 'Josefin Sans',
   },
   cartBtn: {
     width: '38.5%',
@@ -64,5 +67,8 @@ const styles = StyleSheet.create({
   cartTitle: {
     fontSize: 16,
     color: '#FFFFFF',
+    lineHeight:23,
+    fontFamily: 'Josefin Sans',
+    fontWeight:'400'
   },
 });

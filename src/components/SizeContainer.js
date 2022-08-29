@@ -23,11 +23,11 @@ const SizeContainer = () => {
       </View>
       <ScrollView horizontal={true} style={styles.sizeBoxContainer}>
         <SizeBox color={constants.primaryColor} title="XS" size={36} />
-        <SizeBox title="S" size={38} />
-        <SizeBox title="M" size={40} />
-        <SizeBox title="L" size={42} />
-        <SizeBox title="XL" size={44} />
-        <SizeBox title="XXL" size={46} />
+        <SizeBox color='#787775' title="S" size={38} />
+        <SizeBox color='#787775'  title="M" size={40} />
+        <SizeBox color='#787775'  title="L" size={42} />
+        <SizeBox color='#787775'  title="XL" size={44} />
+        <SizeBox color='#787775'  title="XXL" size={46} />
       </ScrollView>
     </View>
   );
