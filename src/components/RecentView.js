@@ -26,6 +26,7 @@ export default RecentView;
 const styles = StyleSheet.create({
   similarProducts: {
     marginTop: 40,
+    paddingBottom:'25%'
   },
   similarProductsView: {
     marginBottom: 20,

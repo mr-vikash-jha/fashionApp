@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     overflow: 'hidden',
+    paddingBottom:'25%'
   },
 });
