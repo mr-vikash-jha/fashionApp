@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   sizeTitle: {
-    fontSize: constants.ColorTitleFont,
-    fontWeight: constants.ColorTitleWeight,
-    color: constants.ColorColor,
+    fontSize: 18,
+    fontWeight: '500',
+    color: '#2F2F2F',
   },
   sizeButtonTitle: {
     fontSize: constants.ColorTitleFont,

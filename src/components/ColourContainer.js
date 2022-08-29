@@ -8,7 +8,7 @@ const ColourContainer = () => {
   return (
     <View style={styles.main}>
       <View style={styles.mainTitle}>
-        <Text style={styles.heading}>COLOURS: </Text>
+        <Text style={styles.heading}>COLOUR:: </Text>
         <Text style={styles.color}>Grey</Text>
       </View>
       <View style={styles.colorDisplay}>
@@ -39,11 +39,11 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: constants.ColorTitleFont,
     fontWeight: constants.ColorTitleWeight,
-    color: constants.ColorColor,
+    color: '#2F2F2F',
   },
   color: {
     fontSize: constants.ColorNameFont,
-    color: constants.ColorNameColor,
+    color: '#787775',
   },
   colorDisplay: {
     display: 'flex',
