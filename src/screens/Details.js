@@ -1,4 +1,3 @@
-
 import {StyleSheet, Text, View, ScrollView, Image} from 'react-native';
 import React from 'react';
 import Header from '../components/Header';
@@ -7,14 +6,17 @@ import SimilarProducts from '../components/SimilarProducts';
 import LikeProducts from '../components/LikeProducts';
 import RecentView from '../components/RecentView';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
+import constants from '../constants';
 
 const Details = () => {
   return (
-    <View>
+    <View style={styles.main}>
       <Header />
       <ScrollView style={styles.detailsStyle}>
         <View style={styles.bredcrum}>
-          <Text style= {styles.headerText}>Home / Mens Clothing / Shirts / Layerr</Text>
+          <Text style={styles.headerText}>
+            Home / Mens Clothing / Shirts / Layerr
+          </Text>
         </View>
         <Image style={styles.image} source={require('../Images/mainimg.png')} />
         <View style={styles.bookmarkView}>
@@ -37,6 +39,9 @@ const Details = () => {
 export default Details;
 
 const styles = StyleSheet.create({
+  main: {
+    backgroundColor: 'white',
+  },
   detailsStyle: {
     position: 'relative',
   },
@@ -51,16 +56,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 50,
     width: 50,
-    backgroundColor: '#D9D9D9',
+    backgroundColor: '#ffffff99',
     borderRadius: 25,
   },
-  bredcrum:{
-    padding:14,
+  bredcrum: {
+    padding: 14,
   },
-  headerText:{
-    lineHeight:28,
-    fontSize:15,
-    color:'#787775',
-    fontWeight:'400',
-  }
+  headerText: {
+    fontFamily: constants.primaryFont,
+    lineHeight: 28,
+    fontSize: 15,
+    color: '#787775',
+    fontWeight: '400',
+  },
+  image: {
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+  },
 });

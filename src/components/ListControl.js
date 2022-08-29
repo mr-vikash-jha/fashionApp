@@ -7,11 +7,11 @@ const ListControl = () => {
     <View style={styles.listControl}>
       <View style={styles.filter}>
         <Icon name="filter-outline" size={30} color="#000" />
-        <Text style ={styles.filterText}>filter</Text>
+        <Text style={styles.filterText}>filter</Text>
       </View>
       <View style={styles.sortBy}>
         <Icon name="sort" size={30} color="#000" />
-        <Text style ={styles.filterText}>sort by</Text>
+        <Text style={styles.filterText}>sort by</Text>
       </View>
     </View>
   );
@@ -46,11 +46,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  filterText:{
+  filterText: {
     color: '#2F2F2F',
     fontSize: 18,
-    lineHeight:28,
-    flexWeight: '400',
-    margin:8
-  }
+    lineHeight: 28,
+    // flexWeight: '400',
+    margin: 8,
+  },
 });

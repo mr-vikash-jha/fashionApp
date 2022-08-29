@@ -30,9 +30,9 @@ const IndudialProductDetails = () => {
         <Text style={styles.modelTitle}>Model Size:</Text>
         <View style={styles.modelDiscView}>
           <Text style={styles.modeldisc}> Height:</Text>
-          <Text>185cm/6'1" </Text>
+          <Text style={styles.modelText}>185cm/6'1" </Text>
           <Text style={styles.modeldisc}> Wears:</Text>
-          <Text>M/L</Text>
+          <Text style={styles.modelText}>M/L</Text>
         </View>
       </View>
       <MoreDetails />
@@ -84,8 +84,8 @@ const styles = StyleSheet.create({
     marginLeft: 3,
     fontSize: 18,
     color: '#2F2F2F',
-    fontSize:17,
-    fontWeight:'390'
+    fontSize: 17,
+    fontWeight: '400',
   },
   model: {
     marginTop: 18,
@@ -106,5 +106,8 @@ const styles = StyleSheet.create({
     fontsize: 13,
     color: '#000',
     fontWeight: '400',
+  },
+  modelText: {
+    color: '#787775',
   },
 });

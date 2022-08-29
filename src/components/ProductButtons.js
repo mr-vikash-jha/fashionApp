@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     height: 80,
     backgroundColor: '#F8F7F7',
     marginHorizontal: -28,
-    borderRadius: 5,
+    borderRadius: 2,
     paddingVertical: 10,
     paddingHorizontal: 9,
     display: 'flex',
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     height: 60,
     borderWidth: 1,
     borderColor: constants.primaryColor,
-    borderRadius: 3,
+    borderRadius: 2,
     marginRight: '1.5%',
     display: 'flex',
     justifyContent: 'center',
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
   buyTitle: {
     fontSize: 16,
     color: constants.primaryColor,
-    fontWeight:'400',
-    lineHeight:23,
+    fontWeight: '400',
+    lineHeight: 23,
     fontFamily: 'Josefin Sans',
   },
   cartBtn: {
@@ -60,15 +60,15 @@ const styles = StyleSheet.create({
     height: 60,
     marginLeft: '1.5%',
     backgroundColor: constants.primaryColor,
-    borderRadius: 3,
+    borderRadius: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
   cartTitle: {
     fontSize: 16,
     color: '#FFFFFF',
-    lineHeight:23,
+    lineHeight: 23,
     fontFamily: 'Josefin Sans',
-    fontWeight:'400'
+    fontWeight: '400',
   },
 });
