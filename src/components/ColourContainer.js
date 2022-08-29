@@ -8,7 +8,7 @@ const ColourContainer = () => {
   return (
     <View style={styles.main}>
       <View style={styles.mainTitle}>
-        <Text style={styles.heading}>COLOUR:: </Text>
+        <Text style={styles.heading}>COLOUR:  </Text>
         <Text style={styles.color}>Grey</Text>
       </View>
       <View style={styles.colorDisplay}>

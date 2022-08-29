@@ -15,7 +15,7 @@ const Product = props => {
       <ProductImage image={props.image} />
       <ProductDetails />
       <View style={styles.bookmark}>
-        <Icon name="bookmark-outline" size={15} color="#C78B9E" />
+        <Icon name="bookmark-outline" size={15} color="#C78B9E"/>
       </View>
     </TouchableOpacity>
   );
@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 27,
-    width: 27,
+    height: 26.65,
+    width: 26.65,
     backgroundColor: constants.bannerColor,
     borderRadius: 25,
     position: 'absolute',
-    top: '91%',
+    top: 328,
     left: '82%',
   },
 });
