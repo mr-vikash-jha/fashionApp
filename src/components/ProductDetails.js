@@ -20,12 +20,18 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
   },
   productTitle: {
+    color:'black',
     fontSize: 9,
     fontWeight: '500',
+    fontFamily: 'Josefin Sans',
+    lineHeight:14
   },
   productDiscription: {
     marginVertical: 7.8,
     fontSize: 8,
     fontWeight: '400',
+    lineHeight:12,
+    color:'#787775',
+    fontFamily: 'Josefin Sans',
   },
 });

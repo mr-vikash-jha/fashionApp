@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
   },
   originalPrice: {
     marginRight: 8.55,
+    color:'#2F2F2F',
+    fontFamily:'Josefin Sans'
   },
   originalPriceText: {
     fontSize: 12,
