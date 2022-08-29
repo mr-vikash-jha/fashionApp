@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     textDecorationLine: 'line-through',
     textDecorationStyle: 'solid',
+    color:'#2f2f2f'
   },
   discountedPrice: {
     marginRight: 11.33,
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
   discountedPriceText: {
     fontSize: 12,
     fontWeight: '400',
+    color:'#2f2f2f'
   },
   dicountText: {
     fontSize: 12,
