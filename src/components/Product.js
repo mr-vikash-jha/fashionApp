@@ -27,8 +27,7 @@ const styles = StyleSheet.create({
   product: {
     marginTop: 50,
     height: 354,
-    width: '49.3%',
-    marginRight: '0.7%',
+    width: '49.5%',
     position: 'relative',
   },
   bookmark: {
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: constants.bannerColor,
     borderRadius: 25,
     position: 'absolute',
-    top: '91%',
+    top: 328,
     left: '82%',
   },
 });

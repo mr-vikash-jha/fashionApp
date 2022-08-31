@@ -30,9 +30,11 @@ export default RenderList;
 const styles = StyleSheet.create({
   renderList: {
     flex: 1,
+    width: '100%',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
     overflow: 'hidden',
-    paddingBottom:'25%'
+    paddingBottom: '25%',
   },
 });

@@ -11,7 +11,7 @@ const MyStack = () => {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
-        // options={{header: false}}
+        options={{headerShown: false}}
         name="Home"
         component={HomeScreen}
       />
