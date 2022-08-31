@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    backgroundColor:'#FFFFFF'
   },
   buyTitle: {
     fontSize: 16,

@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     fontSize: 9,
     fontWeight: '500',
     fontFamily: 'Josefin Sans',
-    lineHeight:14
+    lineHeight:14,
+    letterSpacing: 0.12
   },
   productDiscription: {
     marginVertical: 7.8,
@@ -33,5 +34,6 @@ const styles = StyleSheet.create({
     lineHeight:12,
     color:'#787775',
     fontFamily: 'Josefin Sans',
+    letterSpacing: 0.05
   },
 });

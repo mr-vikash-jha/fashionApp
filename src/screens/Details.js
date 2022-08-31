@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 50,
     width: 50,
-    backgroundColor: '#ffffff99',
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
     borderRadius: 25,
   },
   bredcrum: {
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
   image: {
+    backgroundColor:'red',
     shadowOffset: {
       width: 0,
       height: 0,

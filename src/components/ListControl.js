@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     color: '#2F2F2F',
     fontSize: 18,
     lineHeight: 28,
-    // flexWeight: '400',
     margin: 8,
   },
 });
