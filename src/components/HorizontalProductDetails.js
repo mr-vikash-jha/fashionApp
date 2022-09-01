@@ -9,7 +9,7 @@ const HorizontalProductDetails = () => {
         PRINTED DRESS WITH SPAGHETTI STRAP IN ....
       </Text>
       <Text style={styles.productDiscription}>CUPLET - BLACK </Text>
-      <PriceDetails />
+      <PriceDetails setbookmark={false} />
     </View>
   );
 };
@@ -20,20 +20,20 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   productTitle: {
-    color:'black',
+    color: 'black',
     fontSize: 9,
     fontWeight: '500',
     fontFamily: 'Josefin Sans',
-    lineHeight:14,
-    letterSpacing: 0.12
+    lineHeight: 14,
+    letterSpacing: 0.12,
   },
   productDiscription: {
     marginVertical: 7.8,
     fontSize: 8,
     fontWeight: '400',
-    lineHeight:12,
-    color:'#787775',
+    lineHeight: 12,
+    color: '#787775',
     fontFamily: 'Josefin Sans',
-    letterSpacing: 0.05
+    letterSpacing: 0.05,
   },
 });

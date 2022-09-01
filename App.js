@@ -15,7 +15,11 @@ const MyStack = () => {
         name="Home"
         component={HomeScreen}
       />
-      <Stack.Screen name="Details" component={Details} />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="Details"
+        component={Details}
+      />
     </Stack.Navigator>
   );
 };
@@ -29,17 +33,3 @@ const App = () => {
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-  },
-  bredcrum: {
-    marginLeft: 15,
-    marginBottom: 15,
-  },
-  image: {
-    width: '100%',
-    height: 532,
-  },
-});

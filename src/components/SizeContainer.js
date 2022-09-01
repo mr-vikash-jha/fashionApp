@@ -1,33 +1,71 @@
 import {
+  Image,
   ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
-  TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import constants from '../constants';
-import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 import SizeBox from './SizeBox';
 
 const SizeContainer = () => {
+  const [selectedSizeNumber, setSelectedSizeNumber] = useState(1);
+
   return (
     <View style={styles.main}>
       <View style={styles.sizeControll}>
         <Text style={styles.sizeTitle}>SIZE</Text>
         <TouchableOpacity style={styles.sizeButton}>
-          <Icon name="arrow-expand" color={constants.primaryColor} size={18} />
+          <Image source={require('../Images/arrow.png')} />
           <Text style={styles.sizeButtonTitle}>Size Chart</Text>
         </TouchableOpacity>
       </View>
       <ScrollView horizontal={true} style={styles.sizeBoxContainer}>
-        <SizeBox color={constants.primaryColor} title="XS" size={36} />
-        <SizeBox color="#787775" title="S" size={38} />
-        <SizeBox color="#787775" title="M" size={40} />
-        <SizeBox color="#787775" title="L" size={42} />
-        <SizeBox color="#787775" title="XL" size={44} />
-        <SizeBox color="#787775" title="XXL" size={46} />
+        <SizeBox
+          sizeNumber={1}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(1)}
+          color={constants.primaryColor}
+          title="XS"
+          size={36}
+        />
+        <SizeBox
+          sizeNumber={2}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(2)}
+          title="S"
+          size={38}
+        />
+        <SizeBox
+          sizeNumber={3}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(3)}
+          title="M"
+          size={40}
+        />
+        <SizeBox
+          sizeNumber={4}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(4)}
+          title="L"
+          size={42}
+        />
+        <SizeBox
+          sizeNumber={5}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(5)}
+          title="XL"
+          size={44}
+        />
+        <SizeBox
+          sizeNumber={6}
+          selectedSizeNumber={selectedSizeNumber}
+          onPress={() => setSelectedSizeNumber(6)}
+          title="XXL"
+          size={46}
+        />
       </ScrollView>
     </View>
   );

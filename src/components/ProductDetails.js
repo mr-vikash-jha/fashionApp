@@ -10,7 +10,7 @@ const ProductDetails = () => {
         PRINTED DRESS WITH SPAGHETTI STRAP IN STRETCH
       </Text>
       <Text style={styles.productDiscription}>CUPLET - BLACK </Text>
-      <PriceDetails />
+      <PriceDetails setbookmark={true} />
     </View>
   );
 };
@@ -24,9 +24,8 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 9,
     fontWeight: '500',
-    fontFamily: 'Josefin Sans',
     lineHeight: 14,
-    letterSpacing: 0.12,
+    letterSpacing: 0.7,
     fontFamily: constants.primaryFont,
   },
   productDiscription: {
@@ -35,6 +34,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     lineHeight: 12,
     color: '#787775',
-    fontFamily: 'Josefin Sans',
+    fontFamily: constants.primaryFont,
+    // letterSpacing: ,
   },
 });

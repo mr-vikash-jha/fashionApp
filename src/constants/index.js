@@ -26,5 +26,5 @@ export default constants = {
   ColorNameFont: 22,
   grey: '#2F2F2F',
   ColorNameColor: '#787775',
-  primaryFont: 'Josefin Sans-',
+  primaryFont: 'JosefinSans-Regular',
 };

@@ -1,13 +1,40 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import constants from '../constants';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const SizeBox = props => {
   return (
-    <View style={{...styles.main, borderColor: props.color}}>
-      <Text style={{...styles.title, color: props.color}}>{props.title}</Text>
-      <Text style={{...styles.size, color: props.color}}>{props.size}</Text>
-    </View>
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={{
+        ...styles.main,
+        borderColor:
+          props.sizeNumber === props.selectedSizeNumber
+            ? constants.primaryColor
+            : '#E5E5E5',
+      }}>
+      <Text
+        style={{
+          ...styles.title,
+          color:
+            props.sizeNumber === props.selectedSizeNumber
+              ? constants.primaryColor
+              : '#E5E5E5',
+        }}>
+        {props.title}
+      </Text>
+      <Text
+        style={{
+          ...styles.size,
+          color:
+            props.sizeNumber === props.selectedSizeNumber
+              ? constants.primaryColor
+              : '#E5E5E5',
+        }}>
+        {props.size}
+      </Text>
+    </TouchableOpacity>
   );
 };
 

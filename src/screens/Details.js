@@ -7,24 +7,46 @@ import LikeProducts from '../components/LikeProducts';
 import RecentView from '../components/RecentView';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 import constants from '../constants';
+import ImageSlider from '../components/ImageSlider';
+import {SliderBox} from 'react-native-image-slider-box';
+// import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 
 const Details = () => {
+  const state = {
+    image: [
+      require('../Images/mainimg.png'),
+      require('../Images/mainimg.png'),
+      require('../Images/mainimg.png'),
+      require('../Images/mainimg.png'),
+      require('../Images/mainimg.png'),
+    ],
+  };
   return (
     <View style={styles.main}>
       <Header />
       <ScrollView style={styles.detailsStyle}>
         <View style={styles.bredcrum}>
           <Text style={styles.headerText}>
-            Home / Mens Clothing / Shirts / Layerr
+            Home / Mens Clothing / Shirts / Layer
           </Text>
         </View>
-        <Image style={styles.image} source={require('../Images/mainimg.png')} />
+        {/* <ImageSlider /> */}
+        {/* <Image source={require('../Images/mainimg.png')} /> */}
+        <SliderBox
+          images={state.image}
+          style={styles.slider}
+          paginationBoxStyle={{
+            alignSelf: 'flex-start',
+          }}
+          dotColor="#787775"
+          inactiveDotColor="#D9D9D9"
+        />
         <View style={styles.bookmarkView}>
           <View style={styles.bookmark}>
             <Icon name="bookmark-outline" size={25} color="#787775" />
           </View>
           <View style={styles.bookmark}>
-            <Icon name="share-outline" size={25} color="#787775" />
+            <Image source={require('../Images/share.png')} />
           </View>
         </View>
         <IndudialProductDetails />
@@ -47,8 +69,8 @@ const styles = StyleSheet.create({
   },
   bookmarkView: {
     position: 'absolute',
-    top: '16%',
-    left: '82%',
+    top: '19%',
+    left: '85%',
   },
   bookmark: {
     marginBottom: 10,
@@ -69,11 +91,8 @@ const styles = StyleSheet.create({
     color: '#787775',
     fontWeight: '400',
   },
-  image: {
-    backgroundColor:'red',
-    shadowOffset: {
-      width: 0,
-      height: 0,
-    },
-  },
+  // slider: {
+  //   // backgroundColor: 'red',
+  //   height: 530,
+  // },
 });

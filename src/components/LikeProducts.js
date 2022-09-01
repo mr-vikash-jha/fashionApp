@@ -4,6 +4,11 @@ import HorizontalProductList from './HorizontalProductList';
 import constants from '../constants';
 
 const LikeProducts = () => {
+  const img1 = require('../Images/img12.png');
+  const img2 = require('../Images/img13.png');
+  const img3 = require('../Images/img14.png');
+  const img4 = require('../Images/img12.png');
+  const img5 = require('../Images/img13.png');
   return (
     <View style={styles.similarProducts}>
       <View style={styles.similarProductsView}>
@@ -15,7 +20,13 @@ const LikeProducts = () => {
         </TouchableOpacity>
       </View>
       <View>
-        <HorizontalProductList />
+        <HorizontalProductList
+          img1={img1}
+          img2={img2}
+          img3={img3}
+          img4={img4}
+          img5={img5}
+        />
       </View>
     </View>
   );
@@ -43,13 +54,15 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: '#2F2F2F',
-    lineHeight:23,
-    letterSpacing: 0.02
+    lineHeight: 23,
+    letterSpacing: 0.02,
+    fontFamily: constants.primaryFont,
   },
   viewAllButtonText: {
     fontSize: 16,
     fontWeight: '400',
     color: constants.primaryColor,
-    lineHeight:23
+    lineHeight: 23,
+    fontFamily: constants.primaryFont,
   },
 });

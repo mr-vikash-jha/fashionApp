@@ -1,17 +1,12 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 import constants from '../constants';
 
 const ProductButtons = () => {
   return (
     <View style={styles.main}>
       <TouchableOpacity style={styles.buyBtn}>
-        <Icon
-          name="shopping-outline"
-          color={constants.primaryColor}
-          size={25}
-        />
+        <Image source={require('../Images/buynow.png')} />
         <Text style={styles.buyTitle}>BUY NOW</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.cartBtn}>
@@ -37,17 +32,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   buyBtn: {
-    width: '58.5%',
+    width: '57.93%',
     height: 60,
     borderWidth: 1,
-    borderColor: constants.primaryColor,
+    borderColor: '#D9D9D9',
     borderRadius: 2,
     marginRight: '1.5%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor:'#FFFFFF'
+    backgroundColor: '#FFFFFF',
   },
   buyTitle: {
     fontSize: 16,

@@ -1,17 +1,20 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
+import constants from '../constants';
 
 const ListControl = () => {
   return (
     <View style={styles.listControl}>
       <View style={styles.filter}>
-        <Icon name="filter-outline" size={30} color="#000" />
-        <Text style={styles.filterText}>filter</Text>
+        <Image source={require('../Images/sortby.png')} />
+        {/* <Icon name="filter-outline" size={30} color="#000" /> */}
+        <Text style={styles.filterText}>Filter</Text>
       </View>
       <View style={styles.sortBy}>
-        <Icon name="sort" size={30} color="#000" />
-        <Text style={styles.filterText}>sort by</Text>
+        {/* <Icon name="sort" size={30} color="#000" /> */}
+        <Image source={require('../Images/filter.png')} />
+        <Text style={styles.filterText}>Sort By</Text>
       </View>
     </View>
   );
@@ -51,5 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 28,
     margin: 8,
+    fontFamily: constants.primaryFont,
   },
 });
